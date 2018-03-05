@@ -6,7 +6,8 @@ header {
     color: white;
     font-family: impact, Times, courier;
     font-size: 36px;
-    background: black;
+    background-color: black;
+    background-image: url("../../indv-website/pictures/space.jpg");
     border: solid;
     border-color: black;
     border-width: thick;
