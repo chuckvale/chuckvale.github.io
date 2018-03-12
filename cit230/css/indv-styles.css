@@ -22,6 +22,20 @@ header a{
     color: white;
     text-decoration: none;
 }
+
+@media print {
+    nav ol li {font-size:.05em;font-weight:bold;}
+    div#leftmenu {height:20em; float: left;}
+    aside {font-size: 48; float: left;}
+    main {height:20em;}
+    aside P{height:20em;}
+    footer {height:20em;}  
+}
+
+@media screen and (max-width: 1399px) {
+    footer a {display:inline-block; width:100%; text-align:center; font-size:.5em}
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;

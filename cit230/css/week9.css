@@ -1,4 +1,4 @@
-/*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/
+/* body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  } */
 
 body {
     margin: 0;
@@ -16,12 +16,34 @@ header img {
     width: 10%;
 }
 
+div#left-col, main, aside {font-size: 1vw};
+
 
 nav {
     color: #00FF00;
     background-color: rgba(247, 209, 210, .5);
     border: solid thin green;
     text-indent: 50px;
+}
+
+@media print {
+    nav ol li {font-size:.05em;font-weight:bold;}
+    div#left-col {height:20em}
+    main {height:20em;}
+    aside P{height:20em;}
+    footer {height:20em;}  
+}
+
+@media screen and (max-width: 1399px) {
+    footer a {display:inline-block; width:100%; text-align:center; font-size:.5em}
+}
+
+@media only screen and (max-width: 375) {
+    header {font-size: 48;}
+    body { font-size: 48; }
+    
+        
+    }
 }
 
 nav ol {
