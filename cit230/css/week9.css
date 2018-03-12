@@ -38,13 +38,6 @@ nav {
     footer a {display:inline-block; width:100%; text-align:center; font-size:.5em}
 }
 
-@media only screen and (max-width: 375) {
-    header {font-size: 48;}
-    body { font-size: 48; }
-    
-        
-    }
-}
 
 nav ol {
     text-align: center
