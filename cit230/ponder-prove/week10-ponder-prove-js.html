@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>week10-ponder-prove-completed-js</title>
-    <link href="" rel="stylesheet" type="text/css">
+    <link href="../css/week10.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
         function myVerify() {
-            ("<h1>are you sure you want to submit this? if so hit the back button and then hit the submit button</h1>");
+            document.write("<h1>are you sure you want to submit this? if so hit the back button and then hit the submit button</h1>");
         }
 
         function mySendData() {
-            ("This is the Send Data button and hello " + document.alertform.yourname.value + " backend code would take it from here");
+            window.alert("This is the Send Data button and hello " + document.alertform.yourname.value + " backend code would take it from here");
         }
 
-        
+        function myEnterName() {
+            window.alert("Hello " + document.alertform.yourname.value);
+        }
         
         
 
@@ -24,7 +26,7 @@
         }
 
         function myRollOver(obj) {
-            
+            obj.innerHTML = "Goodbye " + document.alertform.yourname.value);
         }
 
         function myRollOut(obj) {
@@ -32,9 +34,9 @@
         }
 
         function myChangeFont() {
-            
-        
-        
+            var x = document.getElementById("how"); // Find the element with id="js"
+            x.style.fontSize = "25px"; // Change the font size
+            x.style.color = "#FF0000"; // Change the color
         }
         
         function myChangeFontBack() {
@@ -44,10 +46,10 @@
         }
 
         function myChangeColorIn(obj) {
-            
-            
-            
-            
+            obj.value = '';
+            obj.style.backgroundColor= "pink";
+            obj.style.color = "green";
+            obj.style.fontSize = "25px";
         }
 
         function myChangeColorOut(obj) {
@@ -57,7 +59,7 @@
         }
 
         function myNoCopy() {
-            ("hey don't copy me!");
+            window.alert("hey don't copy me!");
         }
 
         function myDoCopy() {
@@ -90,7 +92,7 @@
             <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
         </ol>
     </nav>
-
+    <div class = "flex-container">
     <div id="left-col">
         <ul>
             <li> <a href="rock-users.html">Rock Users</a> </li>
@@ -106,7 +108,7 @@
             <label for="yourname">Enter Your Full Name</label>
             <br>
             <input type="text" id="yourname" name="yourname" placeholder="Please enter your full name" required>
-            <input type="button" value="Go" ">
+            <input type="button" value="Go" onClick="myEnterName()">
             <br>
             <br>
 
@@ -177,10 +179,10 @@
             <br>
 
             <label for="verify">&nbsp;</label>
-            <input type="button" Value="Verify" >
+            <input type="button" Value="Verify" onClick="myVerify()">
 
             <label for="submit">&nbsp;</label>
-            <button type="submit" name="Submit" >Submit</button>
+            <button type="submit" name="Submit" onClick="mySendData()">Submit</button>
 
             <label for="reset">&nbsp;</label>
             <input type="reset" value="Reset">
@@ -225,6 +227,7 @@
         <br>
         <br>
     </aside>
+     </div>                                                                                                                
 
     <footer>
         <!--<h3>(the footer section)</h3>-->
