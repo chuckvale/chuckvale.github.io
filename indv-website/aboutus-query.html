@@ -5,15 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../cit230/css/indv-styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>About Us</title>
-    <script src="../../jquery-3.3.1.min.js"></script
-    $(document).ready(hide() {
-        $("button").click(function(){
-            $("p").hide();
-        $("#test").hide();
-    });
-    });
-    </script>
+
 </head>
 
 <body>
@@ -27,27 +23,38 @@
         <a href="fantheories.html">Theories</a>
         <a href="aboutus.html">About Us</a>
     </div>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Visit our Shop!
+    <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="fanshop.html">Shop Home</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="fanclothes.html">Clothing and Apparel</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="fancollectibles.html">Collectibles</a></li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-toggle").dropdown("toggle");
+        });
+
+    </script>
+
     <div class="flex-container">
 
-    <main class="flex-item">
-    <h3>Sections</h3>
-    <ol>
-        <li><a href="#chapter1">Introduction</a></li>
-        <li><a href="#chapter2">Content</a></li>
-        <li><a href="#chapter3">Conclusion</a></li>
-    </ol>
-    <br>
-        <button type='button' onClick='hide()'>Let's do this!</button>
-    <br>
-    <p>
-        <a id="chapter1"><b>Introduction</b></a><br>
-        Thanks for coming to FANTHEORIES! Ever since I was a kid, I have always loved the Star Wars movies. My dad raised me as a fan and we have always collected Star Wars memorabilia and enjoyed discussing the films. As a result, I’ve thought it would be interesting to make FanTheories.com, a website that really focuses on the fans. I want all fans to have the opportunity to share their thoughts about whatever movie, TV Show, book, or video game they are interested in and have an opinion about.<br> For example, the thing that comes to my mind is a current topic of discussion surrounding the newest Star Wars movies: “Who is Supreme Leader Snoke?” There are a ton of theories out there that fans have come up with that I feel should be addressed. I just think it would be cool for all of these theories to be organized into one place. Not just that, but that some of the less-heard of, yet equally compelling theories, will receive similar attention and recognition by other fans of the franchise.<br><br>
-        <a id="chapter2"><b>Content</b></a><br>
-        I want this site to mostly be about the theories, but there will also be an area of the site dedicated to selling collectibles, clothing, and other items. It is incredibly important for all fans to be able to express their interest in a certain piece of media. For this reason the online shop portion of the site is vital (it would help me to bring in some extra money as well which is ideal). The shop will be broken up into a few different areas. One will be focused on collectibles such as toys, comics, statues, replicas, etc. These such items will mostly be provided by other companies and sold through this site as a third party. The next area will be focused on clothing and other apparel. Most of the products in this category will be products designed by the team at out site and manufactured by a factory somewhere else. Here fans will be able to find T-shirts, sweatshirts, and other clothing items that depict their favorite characters and posters from the series they follow. Overall, the purpose of this area of the site is to provide fans the opportunity to express their interest in their favorite series.<br> The second area of the site is devoted to threads and forums. This is the social area of the site. Here fans can discuss certain topics and debate about theories they have. Each thread will be organized by topic and will feature the ability for the user to post a comment or start a new thread as is used in various discussion-type boards across the web.<br> The third and most important area of the site is the area dedicated to articles and compilations made by the FanTheories team. This would be including the site’s homepage. Here fans will be able to find compilations of the various theories and ideas submitted by fans through the site. All of the ideas will be checked of course by a team of reviewers including myself to make sure they are appropriate to post to the site. Each fan who wants to submit an idea must follow the submission process to have their idea or theory featured. Of course there will be similar theories submitted, meaning they will be needed to be thinned out in terms of quantity, bringing further purpose for the review team. All of the different theories submitted (given they are appropriate and relevant) will be compiled and listed in an article. Here fans will be able to see page-by-page each theory and a brief description of it. The description will feature a quote or two from the actual fan-written theory, as well as a brief description, summary prepared by a member of our staff. While viewing all of the theories, fans will have the opportunity to vote for their favorite or the one that is most likely to occur. After a week the most popular theory is revealed. On each article, as well, there will be a comments section where each fan can voice their opinion about the respective theory. When the most-liked theory is determined a video will be released sharing the top 10 theories and highlighting the top theory.<br><br>
-        <a id="chapter3"><b>Conclusion</b></a><br>
-        In conclusion, FanTheories is a site that focuses on the fans by allowing them the opportunity to express their passion for their favorite series with our collectibles and apparel, participate in online discussions with other fans, and to see the theories of other fans and submit theories of their own. It truly is the ultimate stop for any fan whatever passion they may have.
+        <main class="flex-item">
+            <h3>Sections</h3>
+            <ol>
+                <li><a href="#chapter1">Introduction</a></li>
+                <li><a href="#chapter2">Content</a></li>
+                <li><a href="#chapter3">Conclusion</a></li>
+            </ol>
+            <br>
+            <p>
+                <a id="chapter1"><b>Introduction</b></a><br> Thanks for coming to FANTHEORIES! Ever since I was a kid, I have always loved the Star Wars movies. My dad raised me as a fan and we have always collected Star Wars memorabilia and enjoyed discussing the films. As a result, I’ve thought it would be interesting to make FanTheories.com, a website that really focuses on the fans. I want all fans to have the opportunity to share their thoughts about whatever movie, TV Show, book, or video game they are interested in and have an opinion about.<br> For example, the thing that comes to my mind is a current topic of discussion surrounding the newest Star Wars movies: “Who is Supreme Leader Snoke?” There are a ton of theories out there that fans have come up with that I feel should be addressed. I just think it would be cool for all of these theories to be organized into one place. Not just that, but that some of the less-heard of, yet equally compelling theories, will receive similar attention and recognition by other fans of the franchise.<br><br>
+                <a id="chapter2"><b>Content</b></a><br> I want this site to mostly be about the theories, but there will also be an area of the site dedicated to selling collectibles, clothing, and other items. It is incredibly important for all fans to be able to express their interest in a certain piece of media. For this reason the online shop portion of the site is vital (it would help me to bring in some extra money as well which is ideal). The shop will be broken up into a few different areas. One will be focused on collectibles such as toys, comics, statues, replicas, etc. These such items will mostly be provided by other companies and sold through this site as a third party. The next area will be focused on clothing and other apparel. Most of the products in this category will be products designed by the team at out site and manufactured by a factory somewhere else. Here fans will be able to find T-shirts, sweatshirts, and other clothing items that depict their favorite characters and posters from the series they follow. Overall, the purpose of this area of the site is to provide fans the opportunity to express their interest in their favorite series.<br> The second area of the site is devoted to threads and forums. This is the social area of the site. Here fans can discuss certain topics and debate about theories they have. Each thread will be organized by topic and will feature the ability for the user to post a comment or start a new thread as is used in various discussion-type boards across the web.<br> The third and most important area of the site is the area dedicated to articles and compilations made by the FanTheories team. This would be including the site’s homepage. Here fans will be able to find compilations of the various theories and ideas submitted by fans through the site. All of the ideas will be checked of course by a team of reviewers including myself to make sure they are appropriate to post to the site. Each fan who wants to submit an idea must follow the submission process to have their idea or theory featured. Of course there will be similar theories submitted, meaning they will be needed to be thinned out in terms of quantity, bringing further purpose for the review team. All of the different theories submitted (given they are appropriate and relevant) will be compiled and listed in an article. Here fans will be able to see page-by-page each theory and a brief description of it. The description will feature a quote or two from the actual fan-written theory, as well as a brief description, summary prepared by a member of our staff. While viewing all of the theories, fans will have the opportunity to vote for their favorite or the one that is most likely to occur. After a week the most popular theory is revealed. On each article, as well, there will be a comments section where each fan can voice their opinion about the respective theory. When the most-liked theory is determined a video will be released sharing the top 10 theories and highlighting the top theory.<br><br>
+                <a id="chapter3"><b>Conclusion</b></a><br> In conclusion, FanTheories is a site that focuses on the fans by allowing them the opportunity to express their passion for their favorite series with our collectibles and apparel, participate in online discussions with other fans, and to see the theories of other fans and submit theories of their own. It truly is the ultimate stop for any fan whatever passion they may have.
 
-    </p>
+            </p>
         </main>
     </div>
 
