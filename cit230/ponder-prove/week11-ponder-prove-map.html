@@ -45,11 +45,11 @@
 
             <script>
                 function myMap() {
-                    var myCenter = new google.maps.Latlng(43.8231096, -111.79242369999997);
+                    var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
                         var mapCanvas = document.getElementById("map");
                             var mapOptions = {
 
-                                center: new google.maps.Latlng(43.8231096, -111.79242369999997),
+                                center: new google.maps.LatLng(43.8231096, -111.79242369999997),
                                 zoom: 5,
                                 panControl: true,
                                 zoomControl: true,
@@ -59,7 +59,7 @@
                                 overviewMapControl: true,
                                 rotateControl: true
                             };
-                    var map = new google.maps.Map(mapCanvans,mapOptions);
+                    var map = new google.maps.Map(mapCanvas,mapOptions);
                         var marker = new google.maps.Marker({position: myCenter
                         
                         });
@@ -76,6 +76,7 @@
                         }, 3000);
                 });
                 }
+                
             </script>
 
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVIr8UMTkZ4GyG5LpIbXyvq5u1AqzGYcA&callback=myMap"></script>
