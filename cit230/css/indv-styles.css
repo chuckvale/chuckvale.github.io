@@ -112,6 +112,29 @@ main {
 
 }
 
+table, th, td {
+    border-style: solid;
+    border-width: .1px;
+    border-color:darkgrey;
+    
+}
+
+tr {
+    height:100px;
+    width: 2000px
+}
+
+td {
+    height:200px;
+    width:  2000px
+}
+
+td img {
+    height: auto;
+    width: 100%
+}
+
+
 
 aside {
     background-color: #ffcf00;

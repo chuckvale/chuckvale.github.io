@@ -19,7 +19,6 @@
         <a href="fanforums.html">Forums</a>
         <a href="fanshop.html">Online Shop</a>
         <a href="fantheories.html">Theories</a>
-        <a href="aboutus.html">About Us</a>
     </div>
     <div class="flex-container">
     
@@ -28,10 +27,28 @@
     <p>
         Here fans will be able to find compilations of the various theories and ideas for their favorite books submitted by fans through the site. All of the ideas will be checked by a team of reviewers including myself to make sure they are appropriate to post to the site. Each fan who wants to submit an idea must follow the submission process to have their idea or theory featured. Of course there will be similar theories submitted, meaning they will be needed to be thinned out in terms of quantity, bringing further purpose for the review team. All of the different theories submitted (given they are appropriate and relevant) will be compiled and listed in an article. Here fans will be able to see page-by-page each theory and a brief description of it. The description will feature a quote or two from the actual fan-written theory, as well as a brief description, and summary prepared by a member of our staff. While viewing all of the theories, fans will have the opportunity to vote for their favorite or the one that is most likely to occur. After a week the most popular theory is revealed. On each article, as well, there will be a comments section where each fan can voice their opinion about the respective theory. When the most-liked theory is determined a video will be released sharing the top 10 theories and highlighting the top theory.
     </p>
-       <p><a href="fantheories.html">Back</a></p>
+       <p><a href="fantheories.html">Back</a></p><br><br>
+       <h3>Help contribute to our growing theory database!</h3><br>
+       Name:  <input type='text' id='name'><br><br>
+       Book Title:  <input type='text' id='title'><br><br>
+       Your Theory:  <input type='text' id='theory'><br><br>
+       <button type="button" onClick="theorize()">Submit</button>
+       <script>
+           function theorize(){
+               var theory = document.getElementById('theory').value;
+               var name = document.getElementById('name').value;
+               var title = document.getElementById('title').value;
+               var output = name + ", thank you for submitting your theory for " + title + ":  " + theory;
+               window.alert(output);
+           }
+       </script>
     </main>
         
     </div>
+    <footer>
+        <a href="aboutus.html">About Us</a>
+    </footer>
+
 
 
 </body>

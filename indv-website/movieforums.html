@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <link href="../cit230/css/indv-styles.css" rel="stylesheet" type="text/css">
+    <link href="../cit230/css/indv-styles.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Forum</title>
 </head>
@@ -16,19 +16,32 @@
         <a href="fanforums.html">Forums</a>
         <a href="fanshop.html">Online Shop</a>
         <a href="fantheories.html">Theories</a>
-        <a href="aboutus.html">About Us</a>
     </div>
     <div class="flex-container">
 
-    <main class="flex-item">
-        <h2>Movie Forums</h2>
-    <p>
-        This area of the site is devoted to threads and forums for movies. Here fans can discuss certain topics and debate about theories they have. Each thread will be organized by topic and will feature the ability for the user to post a comment or start a new thread as is used in various discussion-type boards across the web.
-    </p>
-        <a href="fanforums.html">Back</a>
+        <main class="flex-item">
+            <h2>Movie Forums</h2>
+            <p>
+                This area of the site is devoted to threads and forums for movies. Here fans can discuss certain topics and debate about theories they have. Each thread will be organized by topic and will feature the ability for the user to post a comment or start a new thread as is used in various discussion-type boards across the web.
+            </p>
+            <a href="fanforums.html">Back</a><br><br>
+            <script>
+                function comment() {
+                    var comment = document.getElementById('comment').value;
+                    var name = document.getElementById('name').value;
+                    var output = comment + ": " + name;
+                    document.getElementById('output').innerHTML = output;
+                }
+            </script>
+            Enter Name: <input type="text" id="comment"><br><br> Enter Comment: <input type="text" id="name"><br><br>
+            <button type="button" onClick="comment()">Post Comment</button><br><br>
+            <div id="output"></div>
         </main>
-    
+
     </div>
+    <footer>
+        <a href="aboutus.html">About Us</a>
+    </footer>
 
 </body>
 </html>
